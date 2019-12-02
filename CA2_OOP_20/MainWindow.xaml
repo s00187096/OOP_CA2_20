@@ -11,7 +11,7 @@
         <RadioButton x:Name="rbLand" Content="Land" HorizontalAlignment="Left" Margin="64,163,0,0" VerticalAlignment="Top" Click="RbAll_Click"/>
         <RadioButton x:Name="rbWater" Content="Water" HorizontalAlignment="Left" Margin="64,201,0,0" VerticalAlignment="Top" Click="RbAll_Click"/>
         <RadioButton x:Name="rbAir" Content="Air" HorizontalAlignment="Left" Margin="64,240,0,0" VerticalAlignment="Top" Click="RbAll_Click"/>
-        <ListBox x:Name="lbxAllActivities" HorizontalAlignment="Left" Height="255" Margin="171,102,0,0" VerticalAlignment="Top" Width="197"/>
+        <ListBox x:Name="lbxAllActivities" HorizontalAlignment="Left" Height="255" Margin="171,102,0,0" VerticalAlignment="Top" Width="197" SelectionChanged="LbxAllActivities_SelectionChanged"/>
         <ListBox x:Name="lbxSelectedActivities" HorizontalAlignment="Left" Height="255" Margin="496,102,0,0" VerticalAlignment="Top" Width="212"/>
         <Button x:Name="btn__1" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="394,258,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="22" Margin="101,19,0,0" TextWrapping="Wrap" Text="Activity Planner" VerticalAlignment="Top" Width="207"/>
@@ -21,8 +21,8 @@
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Height="22" Margin="496,80,0,0" TextWrapping="Wrap" Text="Selected Activites" VerticalAlignment="Top" Width="207"/>
         <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Height="22" Margin="171,75,0,0" TextWrapping="Wrap" Text="All Activities" VerticalAlignment="Top" Width="207"/>
         <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Height="22" Margin="171,362,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="207"/>
-        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Height="22" Margin="171,389,0,0" TextWrapping="Wrap" Text="instructer led group trek local mountains" VerticalAlignment="Top" Width="233"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="659,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="€"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Height="22" Margin="171,389,0,0" TextWrapping="Wrap" Text="instructer led group trek local mountains" VerticalAlignment="Top" Width="532"/>
+        <TextBlock x:Name="tblkTotal" HorizontalAlignment="Left" Margin="659,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="22"><Run Text="€"/><LineBreak/><Run/></TextBlock>
         <Button x:Name="btnRemove" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="394,258,0,0" VerticalAlignment="Top" Width="75" Click="BtnRemove_Click"/>
         <Button x:Name="btnAdd" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="394,170,0,0" VerticalAlignment="Top" Width="75" Click="BtnAdd_Click"/>
 

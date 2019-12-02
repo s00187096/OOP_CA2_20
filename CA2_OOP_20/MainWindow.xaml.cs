@@ -24,6 +24,8 @@ namespace CA2_OOP_20
         List<Activity> selectedActivities = new List<Activity>();
         List<Activity> filteredActivities = new List<Activity>();
 
+        decimal total = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -184,6 +186,10 @@ namespace CA2_OOP_20
                     allActivities.Remove(activity);
                     selectedActivities.Add(activity);
 
+                    //update total
+                    total += activity.Cost;
+                    tblkTotal.Text = total.ToString();
+
                     //refresh window
                     Refresh();
                 }
@@ -208,6 +214,10 @@ namespace CA2_OOP_20
                 //move item from left to right
                 selectedActivities.Remove(activity);
                 allActivities.Add(activity);
+
+                //update total
+                total -= activity.Cost;
+                tblkTotal.Text = total.ToString();
 
                 //refresh window
                 Refresh();
@@ -279,6 +289,21 @@ namespace CA2_OOP_20
             }
         }
 
+        private void LbxAllActivities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            //figure out what was selected
+            Activity activity = lbxAllActivities.SelectedItem as Activity;//get selected item
+            //check it is not null
+            if (activity !=null ) 
+            {
+                //update text of textblock with the activity description
+                tblkDescription.Text = activity.Description;
+
+            }
+
+
+        }
     }
 }
 
