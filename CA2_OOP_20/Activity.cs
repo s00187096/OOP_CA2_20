@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace CA2_OOP_20
 {
     public enum ActivityType { Air, Water, Land };
-    
 
     public class Activity : IComparable
     {
@@ -21,6 +20,9 @@ namespace CA2_OOP_20
 
         public static decimal TotalExpenses { get; private set; }
         //public ActivityType SuitableFor { get; internal set; }
+
+
+
 
         //constructors
         public Activity()
@@ -48,6 +50,10 @@ namespace CA2_OOP_20
         {
             throw new NotImplementedException();
         }
+
+        
+
+
 
     }
 }
